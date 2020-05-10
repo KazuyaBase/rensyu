@@ -1,0 +1,61 @@
+header {
+  width: 100%;
+
+  .head {
+	 padding: 0 30px;
+
+	.head-title {
+		padding: 40px;
+		text-align: center;
+		letter-spacing: 3px;
+		
+		.logo {
+			
+			a {
+				font-size: 350%;
+				color: #0d0015;
+
+				.JIN {
+					color: #9acc1e;
+					margin-right: 2%;
+				}
+			}
+		}
+	}
+  }
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 767px) {
+	header {
+		width: 100%;
+	  
+		.head {
+		   padding: 0 30px;
+	  
+		  .head-title {
+			  padding: 20px 10px 10px 5px;
+			  margin-top: 10px;
+			  text-align: center;
+			  letter-spacing: 1.5px;
+			  
+			  .logo {
+				  
+				  a {
+					  font-size: 260%;
+					  color: #0d0015;
+					  font-weight: 550;
+
+	  
+					  .JIN {
+						  color: #9acc1e;
+						  margin-right: 2%;
+					  	}
+				  	}
+			  	}
+		  	}
+		}
+	}
+
+
+}

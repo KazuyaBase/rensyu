@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/* リセットCSS */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+   margin:0;
+   padding:0;
+   border:0;
+   outline:0;
+   vertical-align:baseline;
+   font-weight: normal;
+   box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+ul, ol {
+   list-style-type: none;
+}
+ 
+a {
+   text-decoration: none;
+   border-style: none;
+   cursor: pointer;
+}
+
+img {
+   
+   height: auto;
+   border: none;
+   font-size: 0;
+   line-height: 0;
+   vertical-align: middle;
+}
+
+.wrapper {
+   width: 100%;
+   overflow: hidden;
+   margin: 0 auto;
+   font-family: 'Century Gothic','Quicksand', 'Noto Sans Japanese', sans-serif;
+   background: #fff;
+   position: relative;
+}
+
+.contents {
+   display: flex;
+   width: 100%;
+   margin: 20px 0 10px 65px;
+}
+
+/* ページトップに戻るボタン*/
+.pg-top {
+   position: fixed;
+   display: block;
+   right: 22px;
+   bottom: 22px;
+   z-index: 9999;
+}
+
+.pg-top .to-top {
+   background-color: #393542;
+   width: 40px;
+   height: 40px;
+   padding: 5px;
+   font-size: 1.6rem;
+   color: #fff;
+   text-decoration: none;
+   display: block;
+   cursor: pointer;
+   text-align: center;
+   line-height: 0;
+   border-radius: 30px;
+   transition: 0.3s;
+}
+
+.pg-top .to-top:hover {
+   transition: 0.3s;
+   transform: translateY(-4px);
+   
+}
+
+.pg-top .to-top .fas {
+   text-align: center;
+   padding: 3px 4px 7px 5px;
+
+
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 767px) {
+
+   .contents {
+      display: block;
+      width: 100%;
+      margin: 30px 0 10px;
+   }
+}

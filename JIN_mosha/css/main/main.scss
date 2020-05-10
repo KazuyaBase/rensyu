@@ -1,0 +1,307 @@
+.main-contents {
+    width: 60%;
+    margin-left: 10px;
+    
+
+    .topics {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        
+
+        .topics-list {
+            width: 45%;
+            position: relative;
+            margin-bottom: 2.7rem;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.18);
+            margin-left: 2.5rem;
+            transition-duration: 0.4s;
+            -webkit-font-smoothing: antialiased;
+	        
+            
+
+            &:hover {
+                transform: scale(1.03);
+                transition-duration: 0.4s;
+                -webkit-font-smoothing: antialiased;
+            }
+            .topics-link {
+                
+                
+                .topics-link-inner {
+                    width: 100%;
+
+                    .topics-link-img {
+
+                        img {
+                            width: 100%;
+                            -webkit-backface-visibility: hidden;
+                        }
+                    }
+
+                    .topics-link-title {
+                        width: 100%;
+                        
+
+                        .topics-link-d{
+                            position: absolute;
+                            top: 12px;
+                            left: 7px;
+                            color: #ffffff;
+                            border-radius: 1.3rem;
+                            background: #9acc1e;
+                            padding: 4px 10px;
+                            font-size: 1.2rem;
+                            text-align: center;
+                            letter-spacing: 0.1rem;
+                            -webkit-font-smoothing: antialiased;
+                            
+
+                        }
+
+                        .topics-link-text {
+                            padding: 13px 18px;
+                            padding-bottom: 25px;
+                            font-size: 1.7rem;
+                            color: #504756;
+                            font-weight: 550;
+                            letter-spacing: 0.2rem;
+                            line-height: 2.6rem;
+                            width: 90%;
+                            margin-bottom: 30px;
+                            -webkit-font-smoothing: antialiased;
+
+                        }
+
+                        .time {
+                            padding: 10px;
+                            position: absolute;
+                            top: 90%;
+                            left: 72%;
+                            color: #9D9D9D;
+                            font-size: 1.2rem;
+                            -webkit-font-smoothing: subpixel-antialiased;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* ボタン数字*/
+    .topics-num {
+        display: block;
+        width: 100%;
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 60px 0;
+
+            li {
+                margin: 0 4px;
+                position: relative;
+
+                a { 
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    background: #fff;
+                    font-weight: 400;
+                    font-size: 1.5rem;
+                    padding: 5px 3px;
+                    padding-bottom: 4px;
+                    padding-left: 5px;
+                    border-radius: 50%;
+                    line-height: 0;
+                    min-width: 38px;
+                    min-height: 37px;
+                    color: #aaa !important;
+                    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.18);
+                    transition: 0.3s;
+
+                    &:hover {
+                        transition: 0.3s;
+                        transform: translateY(-4px);
+                        background: #6B636F;
+                        color: #fff;
+                    }
+                }
+
+            }
+
+            .num-black {
+                
+                a {
+                    background-color: #0d0015!important;
+                    border-color: #0d0015!important;
+                }
+
+             }
+
+        }
+
+    }
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 767px) {
+
+    .main-contents {
+        width: 95%;
+        
+        
+    
+        .topics {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            
+    
+            .topics-list {
+                width: 45%;
+                position: relative;
+                margin-bottom: 2.7rem;
+                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.18);
+                margin-left: 1.2rem;
+                transition-duration: 0.4s;
+                -webkit-font-smoothing: antialiased;
+                
+                
+    
+                &:hover {
+                    transform: scale(1.03);
+                    transition-duration: 0.4s;
+                    -webkit-font-smoothing: antialiased;
+                }
+                .topics-link {
+                    
+                    
+                    .topics-link-inner {
+                        width: 100%;
+    
+                        .topics-link-img {
+    
+                            img {
+                                width: 100%;
+                                -webkit-backface-visibility: hidden;
+                            }
+                        }
+    
+                        .topics-link-title {
+                            width: 100%;
+                            
+    
+                            .topics-link-d{
+                                position: absolute;
+                                top: 4px;
+                                left: 2px;
+                                color: #ffffff;
+                                border-radius: 1.3rem;
+                                background: #9acc1e;
+                                padding: 2px 5px;
+                                font-size: 0.6rem;
+                                text-align: center;
+                                letter-spacing: 0.1rem;
+                                -webkit-font-smoothing: antialiased;
+                                
+    
+                            }
+    
+                            .topics-link-text {
+                                padding: 0.8rem 0.7rem 1rem;
+                                padding-bottom: 25px;
+                                font-size: 1.2rem;
+                                color: #504756;
+                                font-weight: 550;
+                                letter-spacing: 0.1rem;
+                                line-height: 2.3rem;
+                                width: 100%;
+                                margin-bottom: 0;
+                                -webkit-font-smoothing: antialiased;
+    
+                            }
+    
+                            .time {
+                                padding: 0.3rem 0 0.5rem;
+                                width: 90%;
+                                text-align: right;
+                                position: absolute;
+                                bottom: 0;
+                                left: 5%;
+                                color: #9D9D9D;
+                                font-size: 1.1rem;
+                                -webkit-font-smoothing: subpixel-antialiased;
+    
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        /* ボタン数字*/
+        .topics-num {
+            display: block;
+            width: 100%;
+    
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 20px;
+    
+                li {
+                    margin: 0 4px;
+                    position: relative;
+    
+                    a { 
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
+                        background: #fff;
+                        font-weight: 400;
+                        font-size: 1.5rem;
+                        padding: 5px 3px;
+                        padding-bottom: 4px;
+                        padding-left: 5px;
+                        border-radius: 50%;
+                        line-height: 0;
+                        min-width: 38px;
+                        min-height: 37px;
+                        color: #aaa !important;
+                        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.18);
+                        transition: 0.3s;
+    
+                        &:hover {
+                            transition: 0.3s;
+                            transform: translateY(-4px);
+                            background: #6B636F;
+                            color: #fff;
+                        }
+                    }
+    
+                }
+    
+                .num-black {
+                    
+                    a {
+                        background-color: #0d0015!important;
+                        border-color: #0d0015!important;
+                    }
+    
+                 }
+    
+            }
+    
+        }
+    }
+}
